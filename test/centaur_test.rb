@@ -40,7 +40,7 @@ class CentaurTest < Minitest::Test
     centaur.shoot
     centaur.run
     centaur.shoot
-    assert centaur.cranky?
+    assert_equal true, centaur.cranky?
   end
 
   def test_when_cranky_it_will_not_shoot_a_bow
